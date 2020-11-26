@@ -115,6 +115,8 @@
     <Compile Include="admVistasTablas.cs" />
     <Compile Include="ComercialEmpresaDbContext.cs" />
     <Compile Include="Factories\ComercialEmpresaDbContextFactory.cs" />
+    <Compile Include="nubeCuentas.cs" />
+    <Compile Include="nubeDiarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

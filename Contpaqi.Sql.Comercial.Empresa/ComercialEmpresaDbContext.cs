@@ -95,6 +95,8 @@ namespace Contpaqi.Sql.Comercial.Empresa
         public virtual DbSet<admVistasRecursos> admVistasRecursos { get; set; }
         public virtual DbSet<admVistasRelaciones> admVistasRelaciones { get; set; }
         public virtual DbSet<admVistasTablas> admVistasTablas { get; set; }
+        public virtual DbSet<nubeCuentas> nubeCuentas { get; set; }
+        public virtual DbSet<nubeDiarios> nubeDiarios { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -2328,6 +2330,34 @@ namespace Contpaqi.Sql.Comercial.Empresa
 
             modelBuilder.Entity<admVistasTablas>()
                 .Property(e => e.CINDICES)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<nubeCuentas>()
+                .Property(e => e.CCUENTA)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<nubeCuentas>()
+                .Property(e => e.CNOMBRE)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<nubeCuentas>()
+                .Property(e => e.CTIPO)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<nubeCuentas>()
+                .Property(e => e.CMONEDA)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<nubeCuentas>()
+                .Property(e => e.CSEGMENTO)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<nubeDiarios>()
+                .Property(e => e.CCODIGO)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<nubeDiarios>()
+                .Property(e => e.CNOMBRE)
                 .IsUnicode(false);
         }
     }

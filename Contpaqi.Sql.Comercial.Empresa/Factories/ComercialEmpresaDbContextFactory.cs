@@ -17,10 +17,7 @@ namespace Contpaqi.Sql.Comercial.Empresa.Factories
                 throw new ArgumentNullException(nameof(initialCatalog));
             }
 
-            var connectionStringBuilder = new SqlConnectionStringBuilder(contpaqiConnectionString)
-            {
-                InitialCatalog = initialCatalog
-            };
+            var connectionStringBuilder = new SqlConnectionStringBuilder(contpaqiConnectionString) {InitialCatalog = initialCatalog};
 
             return new ComercialEmpresaDbContext(new SqlConnection(connectionStringBuilder.ToString()), true);
         }
