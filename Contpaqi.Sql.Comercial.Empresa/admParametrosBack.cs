@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Contpaqi.Sql.Comercial.Empresa
 {
     [Table("admParametrosBack")]
-    public class admParametrosBack
+    public partial class admParametrosBack
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
@@ -585,5 +585,11 @@ namespace Contpaqi.Sql.Comercial.Empresa
         [Required]
         [StringLength(40)]
         public string CGUIDEMPRESA { get; set; }
+
+        [Column(TypeName = "text")]
+        public string CTOKENCN { get; set; }
+
+        [Column(TypeName = "text")]
+        public string CREFRESHTOKENCN { get; set; }
     }
 }

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Contpaqi.Sql.Comercial.Empresa
 {
     [Table("admConversionesUnidad")]
-    public class admConversionesUnidad
+    public partial class admConversionesUnidad
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int CIDAUTOINCSQL { get; set; }

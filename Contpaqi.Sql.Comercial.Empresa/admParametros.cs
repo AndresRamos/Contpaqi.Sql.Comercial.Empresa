@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Contpaqi.Sql.Comercial.Empresa
 {
-    public class admParametros
+    public partial class admParametros
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
@@ -612,5 +612,11 @@ namespace Contpaqi.Sql.Comercial.Empresa
         [Required]
         [StringLength(50)]
         public string CSEGPIVA8 { get; set; }
+
+        [Column(TypeName = "text")]
+        public string CTOKENCN { get; set; }
+
+        [Column(TypeName = "text")]
+        public string CREFRESHTOKENCN { get; set; }
     }
 }

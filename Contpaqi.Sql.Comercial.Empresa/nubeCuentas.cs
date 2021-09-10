@@ -2,14 +2,14 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Contpaqi.Sql.Comercial.Empresa
 {
-    public class nubeCuentas
+    public partial class nubeCuentas
     {
         [Key]
         [StringLength(50)]
         public string CCUENTA { get; set; }
 
         [Required]
-        [StringLength(120)]
+        [StringLength(255)]
         public string CNOMBRE { get; set; }
 
         public int CESTATUS { get; set; }

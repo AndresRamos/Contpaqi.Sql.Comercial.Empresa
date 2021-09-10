@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Contpaqi.Sql.Comercial.Empresa
 {
-    public class admPrepolizas
+    public partial class admPrepolizas
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
@@ -47,5 +47,9 @@ namespace Contpaqi.Sql.Comercial.Empresa
         [Required]
         [StringLength(40)]
         public string CGUIDPOLIZA { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string CIDTRANSACCION { get; set; }
     }
 }

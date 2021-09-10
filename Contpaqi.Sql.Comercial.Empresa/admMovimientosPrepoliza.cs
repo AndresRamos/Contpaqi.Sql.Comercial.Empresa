@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Contpaqi.Sql.Comercial.Empresa
 {
     [Table("admMovimientosPrepoliza")]
-    public class admMovimientosPrepoliza
+    public partial class admMovimientosPrepoliza
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
@@ -48,7 +48,7 @@ namespace Contpaqi.Sql.Comercial.Empresa
         public DateTime FECHA { get; set; }
 
         [Required]
-        [StringLength(4)]
+        [StringLength(10)]
         public string SEGNEG { get; set; }
     }
 }

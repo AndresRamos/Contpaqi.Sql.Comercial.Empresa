@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Contpaqi.Sql.Comercial.Empresa
 {
-    public class admSATSegmentos
+    public partial class admSATSegmentos
     {
         [Key]
         [StringLength(10)]

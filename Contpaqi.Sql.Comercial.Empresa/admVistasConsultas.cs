@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Contpaqi.Sql.Comercial.Empresa
 {
-    public class admVistasConsultas
+    public partial class admVistasConsultas
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]

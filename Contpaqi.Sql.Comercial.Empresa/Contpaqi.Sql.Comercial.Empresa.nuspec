@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package >
+
+<package>
 	<metadata>
 		<id>$id$</id>
 		<version>$version$</version>
@@ -9,9 +10,9 @@
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<license type="expression">MIT</license>
 		<projectUrl>https://github.com/AndresRamos/Contpaqi.Sql.Comercial.Empresa</projectUrl>
-		<repository type="git" url="https://github.com/AndresRamos/Contpaqi.Sql.Comercial.Empresa"/>
+		<repository type="git" url="https://github.com/AndresRamos/Contpaqi.Sql.Comercial.Empresa" />
 		<description>$description$</description>
-		<releaseNotes>Se actualizo el modelo de datos de la base de datos de empresas de CONTPAQi Comercial version 6.1.1 </releaseNotes>
+		<releaseNotes>Se actualizo el modelo de datos de la base de datos de empresas de CONTPAQi Comercial version 7.1.0 </releaseNotes>
 		<copyright>$copyright$</copyright>
 		<tags>Contpaqi SQL Comercial</tags>
 	</metadata>

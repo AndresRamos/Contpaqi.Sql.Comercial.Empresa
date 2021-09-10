@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Contpaqi.Sql.Comercial.Empresa
 {
-    public class nubeDiarios
+    public partial class nubeDiarios
     {
         [Key]
         [StringLength(12)]

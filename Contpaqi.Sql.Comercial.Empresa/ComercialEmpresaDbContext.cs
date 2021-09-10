@@ -1,11 +1,10 @@
 using System.Data.Common;
 using System.Data.Entity;
-using System.Data.Entity.Core.Objects;
 using System.Data.Entity.Infrastructure;
 
 namespace Contpaqi.Sql.Comercial.Empresa
 {
-    public class ComercialEmpresaDbContext : DbContext
+    public partial class ComercialEmpresaDbContext : DbContext
     {
         public ComercialEmpresaDbContext()
         {
@@ -28,10 +27,6 @@ namespace Contpaqi.Sql.Comercial.Empresa
         }
 
         public ComercialEmpresaDbContext(DbConnection existingConnection, DbCompiledModel model, bool contextOwnsConnection) : base(existingConnection, model, contextOwnsConnection)
-        {
-        }
-
-        public ComercialEmpresaDbContext(ObjectContext objectContext, bool dbContextOwnsObjectContext) : base(objectContext, dbContextOwnsObjectContext)
         {
         }
 
@@ -1624,6 +1619,14 @@ namespace Contpaqi.Sql.Comercial.Empresa
                 .Property(e => e.CSEGPIVA8)
                 .IsUnicode(false);
 
+            modelBuilder.Entity<admParametros>()
+                .Property(e => e.CTOKENCN)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<admParametros>()
+                .Property(e => e.CREFRESHTOKENCN)
+                .IsUnicode(false);
+
             modelBuilder.Entity<admParametrosBack>()
                 .Property(e => e.CNOMBREEMPRESA)
                 .IsUnicode(false);
@@ -1996,6 +1999,14 @@ namespace Contpaqi.Sql.Comercial.Empresa
                 .Property(e => e.CGUIDEMPRESA)
                 .IsUnicode(false);
 
+            modelBuilder.Entity<admParametrosBack>()
+                .Property(e => e.CTOKENCN)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<admParametrosBack>()
+                .Property(e => e.CREFRESHTOKENCN)
+                .IsUnicode(false);
+
             modelBuilder.Entity<admPreciosCompra>()
                 .Property(e => e.CCODIGOPRODUCTOPROVEEDOR)
                 .IsUnicode(false);
@@ -2018,6 +2029,10 @@ namespace Contpaqi.Sql.Comercial.Empresa
 
             modelBuilder.Entity<admPrepolizas>()
                 .Property(e => e.CGUIDPOLIZA)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<admPrepolizas>()
+                .Property(e => e.CIDTRANSACCION)
                 .IsUnicode(false);
 
             modelBuilder.Entity<admProductos>()

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Contpaqi.Sql.Comercial.Empresa
 {
-    public class admMovtosBancarios
+    public partial class admMovtosBancarios
     {
         [Key]
         [StringLength(26)]

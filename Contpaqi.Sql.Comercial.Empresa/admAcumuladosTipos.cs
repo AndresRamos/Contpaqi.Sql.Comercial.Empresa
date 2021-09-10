@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Contpaqi.Sql.Comercial.Empresa
 {
-    public class admAcumuladosTipos
+    public partial class admAcumuladosTipos
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]

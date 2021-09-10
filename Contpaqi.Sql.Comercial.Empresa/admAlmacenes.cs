@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Contpaqi.Sql.Comercial.Empresa
 {
-    public class admAlmacenes
+    public partial class admAlmacenes
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]

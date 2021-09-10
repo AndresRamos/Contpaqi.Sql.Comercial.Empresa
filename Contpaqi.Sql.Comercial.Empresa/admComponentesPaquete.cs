@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Contpaqi.Sql.Comercial.Empresa
 {
     [Table("admComponentesPaquete")]
-    public class admComponentesPaquete
+    public partial class admComponentesPaquete
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
